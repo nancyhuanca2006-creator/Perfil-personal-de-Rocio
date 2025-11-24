@@ -1,98 +1,216 @@
 <!DOCTYPE html>
-<p><strong>Universidad Católica San Pablo</strong></p>
-</header>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Personal - Nancy Rocio Huanca Quispe</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(180deg, #e8eef6 0%, #ffffff 100%);
+            color: #222;
+        }
 
+        header {
+            background-color: #002f6c;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
 
-<main>
-<img src="perfilnancy.jpg" alt="Foto de Nancy Rocio Huanca Quispe" class="perfil">
-<h2>Datos Personales</h2>
-<p><strong>Nombre:</strong> Nancy Rocio Huanca Quispe</p>
-<p><strong>Edad:</strong> 19 años</p>
-<p><strong>Carrera:</strong> Contabilidad</p>
-<p><strong>Semestre:</strong> Tercer semestre</p>
+        header img {
+            width: 140px;
+            display: block;
+            margin: 0 auto 10px auto;
+        }
 
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
 
-<div class="seccion">
-<h2>Biografía</h2>
-<p>
-Mi nombre es Nancy, aunque prefiero que me llamen por mi segundo nombre, Rocio.
-Tengo 19 años y actualmente soy estudiante de la
-<a href="https://ucsp.edu.pe/" target="_blank">Universidad Católica San Pablo</a>,
-donde curso el tercer semestre de la carrera de Contabilidad.
-Me considero una persona responsable, comprometida y con muchas ganas de seguir creciendo profesionalmente.
-</p>
-</div>
+        h1, h2 {
+            color: #002f6c;
+            text-align: center;
+            font-weight: 600;
+        }
 
+        h2 {
+            border-bottom: 2px solid #002f6c;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
 
-<div class="seccion">
-<h2>Actividades y Proyectos</h2>
-<p>
-He participado en diferentes proyectos sociales a través del programa <strong>Qori Watakuna</strong>,
-enfocados en el servicio comunitario y el desarrollo social.
-Además, asistí al <strong>Congreso de Economía</strong> organizado por la Asociación Peruana de Economía (APE),
-donde fortalecí mis conocimientos en temas financieros y económicos.
-</p>
-</div>
+        p {
+            text-align: justify;
+            line-height: 1.7;
+            margin: 10px 0;
+        }
 
+        a {
+            color: #004aad;
+            text-decoration: none;
+        }
 
-<div class="seccion">
-<h2>Intereses</h2>
-<p>
-Me interesa seguir ampliando mis conocimientos en contabilidad, economía y gestión social,
-así como participar en proyectos de voluntariado que promuevan el desarrollo sostenible y la responsabilidad social.
-También busco mejorar mis habilidades personales y profesionales a través de actividades académicas y de servicio.
-</p>
-</div>
+        a:hover {
+            text-decoration: underline;
+        }
 
+        img.perfil {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            width: 220px;
+            border: 3px solid #004aad;
+        }
 
-<div class="seccion">
-<h2>Docente</h2>
-<p>
-<a href="https://www.linkedin.com/in/ecuadrosv?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Ernesto Cuadros Vargas</a>
-</p>
-</div>
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #002f6c;
+            color: white;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
 
+        .seccion {
+            margin-bottom: 30px;
+        }
 
-<div class="seccion">
-<h2>Linkedin de Amistades</h2>
-<div class="columnas">
-<div class="columna-item"><a href="https://www.linkedin.com/in/katerine-angela-huaycani-turpo-003803336?utm_source=share&utm_campaign=share_v=profile&utm_medium=ania&utm_contentdroid_app" target="_blank">Katerine Angela Huaycani Turpo</a></div>
-<div class="columna-item"><a href="https://www.linkedin.com/in/marializcadenashuillcapacco?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Rebeca Marializ Cadenas Huillcapacco</a></div>
-<div class="columna-item"><a href="https://www.linkedin.com/in/traicy-pacco-colque-01469b386?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Traicy Pacco Colque</a></div>
-<div class="columna-item"><a href="https://www.linkedin.com/in/tiago-castro-barriga-822644197?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Tiago Castro Barriga</a></div>
-<div class="columna-item"><a href="https://www.linkedin.com/in/santiago-rosas-solano-8a5467387?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Santiago Rosas Solano</a></div>
-</div>
-</div>
+        .columnas {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            padding: 10px 0;
+        }
 
-<div class="seccion">
-<h2>Amistades</h2>
-<div class="columnas">
-<div class="columna-item"><a href="https://katerineangelahuaycaniturpo.github.io/pagina-web/" target="_blank">Katerine Angela Huaycani Turpo</a></div>
-<div class="columna-item"><a href="https://marializcadenashuillcapacco.github.io/pagina-web/" target="_blank">Rebeca Marializ Cadenas Huillcapacco</a></div>
-<div class="columna-item"><a href="https://traicypaccocolque.github.io/" target="_blank">Traicy Pacco Colque</a></div>
-<div class="columna-item"><a href="https://tiagocastro1.github.io/tiagocastro.github.io/" target="_blank">Tiago Castro Barriga</a></div>
-<div class="columna-item"><a href="https://greciamunoz-sys.github.io/Grecia-Arianne-Consuelo-Munoz-Ventura/" target="_blank">Grecia Consuelo Muñoz</a></div>
-<div class="columna-item"><a href="https://gustavorodriguezrodriguez.github.io/pagina-web/" target="_blank">Gustavo Rodriguez Rodriguez</a></div>
-</div>
-</div>
+        .columna-item {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
 
+    <header>
+        <img src="logo_ucsp.png" alt="Logo UCSP">
+        <h1>Perfil Personal</h1>
+        <p><strong>Universidad Católica San Pablo</strong></p>
+    </header>
 
-<div class="seccion">
-<h2>Contacto</h2>
-<p><strong>Correo:</strong> <a href="mailto:Rociohuanca2006@gmail.com">Rociohuanca2006@gmail.com</a></p>
-<p><strong>LinkedIn:</strong>
-<a href="https://www.linkedin.com/in/rocio-huanca-quispe-436959385" target="_blank">
-Rocio Huanca Quispe
-</a>
-</p>
-</div>
-</main>
+    <main>
+        <img src="perfilnancy.jpg" alt="Foto de Nancy Rocio Huanca Quispe" class="perfil">
+        <h2>Datos Personales</h2>
+        <p><strong>Nombre:</strong> Nancy Rocio Huanca Quispe</p>
+        <p><strong>Edad:</strong> 19 años</p>
+        <p><strong>Carrera:</strong> Contabilidad</p>
+        <p><strong>Semestre:</strong> Tercer semestre</p>
 
+        <div class="seccion">
+            <h2>Biografía</h2>
+            <p>
+                Mi nombre es Nancy, aunque prefiero que me llamen por mi segundo nombre, Rocio. 
+                Tengo 19 años y actualmente soy estudiante de la 
+                <a href="https://ucsp.edu.pe/" target="_blank">Universidad Católica San Pablo</a>, 
+                donde curso el tercer semestre de la carrera de Contabilidad. 
+                Me considero una persona responsable, comprometida y con muchas ganas de seguir creciendo profesionalmente.
+            </p>
+        </div>
 
-<footer>
-<p>© 2025 Universidad Católica San Pablo — Facultad de Ciencias Económicas y Empresariales</p>
-</footer>
+        <div class="seccion">
+            <h2>Actividades y Proyectos</h2>
+            <p>
+                He participado en diferentes proyectos sociales a través del programa <strong>Qori Watakuna</strong>, 
+                enfocados en el servicio comunitario y el desarrollo social. 
+                Además, asistí al <strong>Congreso de Economía</strong> organizado por la Asociación Peruana de Economía (APE), 
+                donde fortalecí mis conocimientos en temas financieros y económicos.
+            </p>
+        </div>
 
+        <div class="seccion">
+            <h2>Intereses</h2>
+            <p>
+                Me interesa seguir ampliando mis conocimientos en contabilidad, economía y gestión social, 
+                así como participar en proyectos de voluntariado que promuevan el desarrollo sostenible y la responsabilidad social.
+                También busco mejorar mis habilidades personales y profesionales a través de actividades académicas y de servicio.
+            </p>
+        </div>
+
+        <div class="seccion">
+            <h2>Docente</h2>
+            <p>
+                <a href="https://www.linkedin.com/in/ecuadrosv?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Ernesto Cuadros Vargas</a>
+            </p>
+        </div>
+
+        <div class="seccion">
+            <h2>Linkedin de Amistades</h2>
+            <div class="columnas">
+                <div class="columna-item"><a href="https://www.linkedin.com/in/katerine-angela-huaycani-turpo-003803336?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Katerine Angela Huaycani Turpo</a></div>
+                <div class="columna-item"><a href="https://www.linkedin.com/in/marializcadenashuillcapacco?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Rebeca Marializ Cadenas Huillcapacco</a></div>
+                <div class="columna-item"><a href="https://www.linkedin.com/in/traicy-pacco-colque-01469b386?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Traicy Pacco Colque</a></div>
+                <div class="columna-item"><a href="https://www.linkedin.com/in/tiago-castro-barriga-822644197?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Tiago Castro Barriga</a></div>
+                <div class="columna-item"><a href="https://www.linkedin.com/in/santiago-rosas-solano-8a5467387?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Santiago Rosas Solano</a></div>
+            </div>
+        </div>
+
+      <!-- NUEVA SECCIÓN AGREGADA -->
+        <div class="seccion">
+            <h2>Amistades</h2>
+            <div class="columnas">
+                <div class="columna-item">
+                    <a href="https://katerineangelahuaycaniturpo.github.io/pagina-web/" target="_blank">
+                        Katerine Angela Huaycani Turpo
+                    </a>
+                </div>
+                <div class="columna-item">
+                    <a href="https://marializcadenashuillcapacco.github.io/pagina-web/" target="_blank">
+                        Rebeca Marializ Cadenas Huillcapacco
+                    </a>
+                </div>
+                <div class="columna-item">
+                    <a href="https://traicypaccocolque.github.io/" target="_blank">
+                        Traicy Pacco Colque
+                    </a>
+                </div>
+                <div class="columna-item">
+                    <a href="https://tiagocastro1.github.io/tiagocastro.github.io/" target="_blank">
+                        Tiago Castro Barriga
+                    </a>
+                </div>
+                <div class="columna-item">
+                    <a href="https://greciamunoz-sys.github.io/Grecia-Arianne-Consuelo-Munoz-Ventura/" target="_blank">
+                        Grecia Consuelo Muñoz
+                    </a>
+                </div>
+                <div class="columna-item">
+                    <a href="https://gustavorodriguezrodriguez.github.io/pagina-web/" target="_blank">
+                        Gustavo Rodriguez Rodriguez
+                    </a>
+                </div>
+            </div>
+        </div>
+      
+        <div class="seccion">
+            <h2>Contacto</h2>
+            <p><strong>Correo:</strong> <a href="mailto:Rociohuanca2006@gmail.com">Rociohuanca2006@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> 
+                <a href="https://www.linkedin.com/in/rocio-huanca-quispe-436959385" target="_blank">
+                    Rocio Huanca Quispe
+                </a>
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Universidad Católica San Pablo — Facultad de Ciencias Económicas y Empresariales</p>
+    </footer>
 
 </body>
 </html>
+
